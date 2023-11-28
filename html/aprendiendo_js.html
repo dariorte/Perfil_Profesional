@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Js</title>
+</head>
+<body onload="load_page()">
+    <h1>Ivan Amaya</h1>
+
+    <label for="" id="text_one"></label>
+    <label for="" id="text_two"></label>
+
+    <button onclick="change_color()">Cambiar color</button>
+    <button id="limpiar">RESTAURAR COLORES</button>
+    <br><br>
+
+
+    <form id="form_register" autocomplete="off">
+        <label for="nombres">Nombres</label>
+        <input type="text" id="nombres" size="30" placeholder="Escriba sus nombres aqui" onblur="validate">
+        <br>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" size="30" placeholder="Escriba sus apellidos aqui" onblur="validate">
+        <br>
+        <button type="submit">REGISTRAR</button>
+        <button type="reset">LIMPIAR</button>
+        <br>
+        <p id="validation"></p>
+    </form>
+    <button id="limpiar">limpiar</button>
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/functions.js"></script>
+    <script>
+       //alert("Hola bienvenido");
+        var numero = 7;
+        console.log(numero);
+    </script>
+</body>
+</html>

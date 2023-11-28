@@ -1,5 +1,5 @@
 (function(){
-    const titleQuestions = [...document.querySelectorAll('.questions__title')];
+    const titleQuestions = [...document.querySelectorAll('.questions_title')];
     console.log(titleQuestions)
 
     titleQuestions.forEach(question =>{
@@ -8,8 +8,8 @@
             let answer = question.nextElementSibling;
             let addPadding = question.parentElement.parentElement;
 
-            addPadding.classList.toggle('questions__padding--add');
-            question.children[0].classList.toggle('questions__arrow--rotate');
+            addPadding.classList.toggle('questions_padding--add');
+            question.children[0].classList.toggle('questions_arrow--rotate');
 
             if(answer.clientHeight === 0){
                 height = answer.scrollHeight;

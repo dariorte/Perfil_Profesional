@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="caja">
+    <div id="print"></div>
+    <button onclick="calculo()">Validar</button>
+
+    <script>
+        function calculo() {
+            let caja_Uno = parseInt(document.getElementById(caja_Uno).value);
+            let caja_Dos = parseInt(document.getElementById(caja_Dos).value);
+
+            for (caja_Uno; caja_Uno <= caja_Dos; caja_Uno+=2) {
+                print += caja_Uno + "/";
+                
+            }
+            document.getElementById("print").innerHTML = print;
+        }
+    </script>
+</body>
+</html>
